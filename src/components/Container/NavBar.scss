@@ -29,14 +29,42 @@
   margin: 0px;
   width: 110px;
 }
-.Logo img{
- width: 50px;
- margin-top: 4px;
- margin-left: 8px;
- opacity: 0.8;
+.Logo img {
+  width: 50px;
+  margin-top: 4px;
+  margin-left: 8px;
+  opacity: 0.8;
 }
-.Spacer {
-  width: 130px;
+.fa-instagram-square,
+.fa-linkedin-square,
+.fa-envelope-square {
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.fa-instagram-square:hover,
+.fa-linkedin-square:hover,
+.fa-envelope-square:hover {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.Spacer{
+  flex: 1;
+}
+
+.FooterList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: flex-end;
+  width: 110px;
+  margin-top: 2px;
+  font-size: 28px;
+  li {
+    padding: 3px 0px;
+  }
 }
 ul {
   text-align: center;
@@ -60,11 +88,13 @@ ul {
     text-transform: uppercase;
     transition: opacity 0.2s ease;
   }
-  button:hover,
-  button:active button:focus {
+  button:hover {
     opacity: 0.5;
     cursor: pointer;
     text-decoration: underline;
+  }
+  button:active {
+    transform: translateY(1px);
   }
 }
 

@@ -14,12 +14,11 @@
   transition: opacity 0.2s ease;
 }
 
-
 .DrawerToggleButton:focus {
   outline: none;
 }
 .DrawerToggleButton:hover {
-  cursor: pointer;;
+  cursor: pointer;
   opacity: 0.5;
 }
 
@@ -28,5 +27,3 @@
   height: 4px;
   background: rgb(0, 0, 0);
 }
-
-
