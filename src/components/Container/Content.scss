@@ -1,0 +1,84 @@
+.allContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // align-items: center;
+}
+.SideBarleft {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 40px;
+}
+.SideBarright {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  width: 40px;
+}
+.Content {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  display: none;
+}
+
+// .Image {
+//   padding: 3px 5px;
+// }
+.Image {
+  padding: 6px 8px;
+}
+.Image:hover {
+  cursor: pointer;
+}
+
+.Landscape {
+  width: 90vw;
+  max-width: 800px;
+}
+
+.Portrait {
+  width: 45vw;
+  max-width: 400px;
+  max-height: 600px;
+}
+
+@media screen and (min-width: 1000px) {
+  .Content {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .Content {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .Content {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 2300px) {
+  .Content {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Content {
+    width: 100%;
+  }
+  .Image {
+    padding: 3px 5px;
+  }
+}

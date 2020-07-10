@@ -1,0 +1,32 @@
+.DrawerToggleButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 26px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 5px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+
+.DrawerToggleButton:focus {
+  outline: none;
+}
+.DrawerToggleButton:hover {
+  cursor: pointer;;
+  opacity: 0.5;
+}
+
+.button_line {
+  width: 30px;
+  height: 4px;
+  background: rgb(0, 0, 0);
+}
+
+
