@@ -1,6 +1,10 @@
 @import "_typography";
 @import "_variables";
 
+* {
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
