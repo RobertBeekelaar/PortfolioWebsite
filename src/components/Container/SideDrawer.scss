@@ -1,16 +1,18 @@
 .SideDrawer {
-  height: calc(100%-80px);
+  height: 100%;
   background: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
-  bottom: 25px;
+  bottom: 0;
   width: 75%;
   max-width: 300px;
   z-index: 80;
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 25px;
 
   &.open {
     transform: translateX(0%);
