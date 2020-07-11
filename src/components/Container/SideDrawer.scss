@@ -1,16 +1,20 @@
 .SideDrawer {
   height: calc(100%-80px);
   background: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.250);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 40px;
   left: 0;
-  bottom: 40px;
+  bottom: 25px;
   width: 75%;
   max-width: 300px;
   z-index: 80;
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(0%);
+  }
 
   ul {
     height: 100%;
@@ -25,10 +29,6 @@
     font-size: 16px;
     letter-spacing: 1px;
   }
-
-}
-.SideDrawer.open {
-  transform: translateX(0%);
 }
 
 @media (min-width: 1040px) {

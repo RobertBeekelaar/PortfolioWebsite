@@ -6,9 +6,18 @@
   left: 0;
   background: rgba(0, 0, 0, 0.75);
   z-index: 50;
-}
-.BackDrop:hover {
-  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.open {
+    opacity: 1;
+    pointer-events: initial;
+  }
 }
 
 @media (min-width: 1040px) {

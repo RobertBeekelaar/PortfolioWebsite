@@ -8,7 +8,9 @@ const NavBar = (props) => {
   const handleRef = (ev) => {
     console.log(ev.currentTarget.value)
     const targetElm = document.querySelector(`.${ev.currentTarget.value}`)
-    targetElm.scrollIntoView()
+    // targetElm.scrollIntoView({behavior: 'smooth'})
+    // window.scrollBy(0, -50)
+    window.scrollTo({ top: targetElm.offsetTop - 47.5, behavior: "smooth" })
   }
 
   return (

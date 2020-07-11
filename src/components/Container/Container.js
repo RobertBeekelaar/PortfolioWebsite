@@ -62,17 +62,11 @@ const Container = () => {
     setShowModal(!showModal)
   }
 
-  let backdrop
-
-  if (sideDrawerOpen) {
-    backdrop = <BackDrop click={backdropClickHandler} />
-  }
-
   return (
     <div className="Container">
       <NavBar DrawerClickHandler={DrawerToggleClickHandler} />
-      <SideDrawer show={sideDrawerOpen} />
-      {backdrop}
+      <SideDrawer show={sideDrawerOpen} click={DrawerToggleClickHandler} />
+      <BackDrop show={sideDrawerOpen} click={backdropClickHandler} />
       <Content data={posts} click={handlePopUp} />
       {showModal ? (
         <PopUp url={popUp} info={popUpInfo} close={handlePopUp} />

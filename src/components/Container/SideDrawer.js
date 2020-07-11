@@ -2,7 +2,7 @@ import React from "react"
 import "./SideDrawer.scss"
 
 const SideDrawer = (props) => {
-  const { show } = props
+  const { show, click } = props
   let drawerClasses = ["SideDrawer"]
 
   if (show) {
@@ -11,14 +11,22 @@ const SideDrawer = (props) => {
 
   const handleRef = (ev) => {
     const targetElm = document.querySelector(`.${ev.currentTarget.value}`)
-    targetElm.scrollIntoView()
+    // targetElm.scrollIntoView({behavior: 'smooth'})
+    // window.scrollBy(0, -50)
+    window.scrollTo({ top: targetElm.offsetTop - 47.5, behavior: "smooth" })
+    click()
   }
 
   return (
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <button onClick={(ev) => handleRef(ev)} value="Facades">
+          <button
+            onClick={(ev) => {
+              handleRef(ev)
+            }}
+            value="Facades"
+          >
             Facades
           </button>
         </li>
